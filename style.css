@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --title: hsl(0, 0%, 100%);
+    --paragraph: hsl(217, 12%, 63%);
+    --button-background: hsl(25, 97%, 53%);
+    --background: hsl(216, 12%, 8%);
+    --card: hsl(213, 19%, 18%);
+    --paragraph-size: 15px;
+    --circle-background: hsl(206, 18%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: papayawhip;
+    font-family: 'Overpass', serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 400px;
+    height: 400px;
+    border-radius: 18px;
+    padding: 24px;
+    /* padding-bottom: 0px; */
+    background: var(--card);
+}
+
+header {
+    width: fit-content;
+    background: papayawhip;
+    border-radius: 50%;
+}
+
+img {
+    background: var(--circle-background);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.card-content {
+    margin: 20px 0px;
+    background: var(--card);
+}
+
+.card-title {
+    color: var(--title);
+    background: var(--card);
+    margin: 6px 0;
+    font-weight: 400;
+}
+
+.card-paragraph {
+    background: var(--card);
+    color: var(--paragraph);
+    font-size: var(--paragraph-size);
+}
+
+.card-numbers {
+    background: var(--card);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    list-style: none;
+}
+
+.number {
+    background: var(--circle-background);
+    color: var(--paragraph);
+    padding: 20px;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.number:hover {
+    background: var(--button-background);
+    color: var(--background);
+}
+
+.button {
+    background: var(--button-background);
+    color: var(--background);
+    padding: 12px;
+    font-weight: 900;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 40px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--title);
+}
