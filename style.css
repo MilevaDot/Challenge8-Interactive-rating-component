@@ -14,8 +14,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: papayawhip;
+    background: var(--background);
     font-family: 'Overpass', serif;
+}
+
+.inactive {
+    display: none;
+}
+
+.title-background {
+    background: var(--title) !important;
+    color: var(--background) !important;
 }
 
 body {
@@ -25,22 +34,26 @@ body {
     justify-content: center;
 }
 
-main {
-    width: 400px;
-    height: 400px;
-    border-radius: 18px;
-    padding: 24px;
-    /* padding-bottom: 0px; */
+.principal {
     background: var(--card);
 }
 
-header {
-    width: fit-content;
-    background: papayawhip;
-    border-radius: 50%;
+main {
+    width: 395px;
+    height: 380px;
+    border-radius: 18px;
+    padding: 24px;
+    background: var(--card);
 }
 
-img {
+@media ( width < 375px ) {
+    main {
+        width: 350px;
+        height: 360px;
+    }
+}
+
+.principal img {
     background: var(--circle-background);
     padding: 10px;
     border-radius: 50%;
@@ -56,6 +69,7 @@ img {
     background: var(--card);
     margin: 6px 0;
     font-weight: 400;
+    font-size: 24px;
 }
 
 .card-paragraph {
@@ -94,7 +108,7 @@ img {
     padding: 12px;
     font-weight: 900;
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     border-radius: 40px;
     font-size: 18px;
     letter-spacing: 1.5px;
@@ -103,4 +117,24 @@ img {
 
 .button:hover {
     background: var(--title);
+}
+
+.thank-you {
+    background: var(--card);
+    text-align: center;
+}
+
+.thank-you img {
+    background: var(--card);
+    margin: 20px 0;
+}
+
+.card-rating {
+    background: var(--circle-background);
+    width: fit-content;
+    color: var(--button-background);
+    padding: 10px;
+    font-size: var(--paragraph);
+    border-radius: 40px;
+    margin: auto;
 }

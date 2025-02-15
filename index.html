@@ -11,19 +11,31 @@
 </head>
 <body>
    <main>
-      <img src="images/icon-star.svg" alt="icon star">
-      <div class="card-content">
-         <h1 class="card-title">How did we do?</h1>
-         <p class="card-paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="principal">
+         <img src="images/icon-star.svg" alt="icon star">
+         <div class="card-content">
+            <h2 class="card-title">How did we do?</h2>
+            <p class="card-paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+         </div>
+         <ul class="card-numbers">
+            <li class="number">1</li>
+            <li class="number">2</li>
+            <li class="number">3</li>
+            <li class="number">4</li>
+            <li class="number">5</li>
+         </ul>
+         <button id="submit-button" type="button" class="button">SUBMIT</button>
       </div>
-      <ul class="card-numbers">
-         <li class="number">1</li>
-         <li class="number">2</li>
-         <li class="number">3</li>
-         <li class="number">4</li>
-         <li class="number">5</li>
-      </ul>
-      <button class="button">SUBMIT</button>
+
+      <div class="thank-you inactive">
+         <img src="images/illustration-thank-you.svg" alt="Thank you illustration">
+         <div class="card-rating">You selected 4 out of 5</div>
+         <div class="card-content">
+            <h2 class="card-title">Thank you!</h2>
+            <p class="card-paragraph">We appreciate you taking the time to give a rating. If yout ever need more support, don't hesitate to get in touch!</p>
+         </div>
+      </div>
    </main>
+   <script src="app.js"></script>
 </body>
 </html>
